@@ -1,0 +1,34 @@
+{
+  "name": "ht-utils",
+  "version": "1.0.0",
+  "description": "Hudson-Taylor utils",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "semistandard && mocha -R spec -r babel-register --bail",
+    "build": "babel src -d lib",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hudson-taylor/utils.git"
+  },
+  "keywords": [
+    "hudson-taylor"
+  ],
+  "author": "Adam Brady <adam@boxxen.org>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hudson-taylor/utils/issues"
+  },
+  "homepage": "https://github.com/hudson-taylor/utils#readme",
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-register": "^6.5.2",
+    "mocha": "^2.4.5",
+    "semistandard": "^7.0.5"
+  },
+  "dependencies": {
+    "async": "^1.5.2"
+  }
+}
